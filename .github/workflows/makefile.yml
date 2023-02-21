@@ -29,6 +29,11 @@ jobs:
         # Target architecture for Go to use. Examples: x86, x64. Will use system architecture by default.
         #architecture: # optional      
 
+    - name: Run golangci-lint
+      # You may pin to the exact commit or the version.
+      # uses: golangci/golangci-lint-action@08e2f20817b15149a52b5b3ebe7de50aff2ba8c5
+      uses: golangci/golangci-lint-action@v3.4.0
+
 #    - name: configure
 #      run: ./configure
 
